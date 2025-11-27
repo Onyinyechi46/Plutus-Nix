@@ -83,6 +83,23 @@ executable will-exe
         cardano-ledger-shelley
     default-language:   Haskell2010
 
+executable index-fund-exe
+    main-is:            Indexfund.hs
+    hs-source-dirs:     tests
+    build-depends:
+        base >=4.14 && <5,
+        plutus-ledger-api,
+        plutus-tx,
+        plutus-tx-plugin,
+        bytestring,
+        serialise,
+        text,
+        containers,
+        cardano-api,
+        cardano-ledger-core,
+        cardano-ledger-shelley
+    default-language:   Haskell2010
+
 executable onchain-exe
     main-is:            Onchain.hs
     hs-source-dirs:     tests
@@ -168,6 +185,40 @@ executable dutch-auction-exe
         cardano-ledger-shelley
     default-language:   Haskell2010
 
+executable insurance-exe
+    main-is:            Insurance.hs
+    hs-source-dirs:     tests
+    build-depends:
+        base >=4.14 && <5,
+        plutus-ledger-api,
+        plutus-tx,
+        plutus-tx-plugin,
+        bytestring,
+        serialise,
+        text,
+        containers,
+        cardano-api,
+        cardano-ledger-core,
+        cardano-ledger-shelley
+    default-language:   Haskell2010
+
+executable customer-exe
+    main-is:            Customer.hs
+    hs-source-dirs:     tests
+    build-depends:
+        base >=4.14 && <5,
+        plutus-ledger-api,
+        plutus-tx,
+        plutus-tx-plugin,
+        bytestring,
+        serialise,
+        text,
+        containers,
+        cardano-api,
+        cardano-ledger-core,
+        cardano-ledger-shelley
+    default-language:   Haskell2010        
+
 executable english-auction-exe
     main-is:            EnglishAuction.hs
     hs-source-dirs:     tests
@@ -184,6 +235,40 @@ executable english-auction-exe
         cardano-ledger-core,
         cardano-ledger-shelley
     default-language:   Haskell2010 
+
+executable social-media-exe
+    main-is:            SocialMedia.hs
+    hs-source-dirs:     tests
+    build-depends:
+        base >=4.14 && <5,
+        plutus-ledger-api,
+        plutus-tx,
+        plutus-tx-plugin,
+        bytestring,
+        serialise,
+        text,
+        containers,
+        cardano-api,
+        cardano-ledger-core,
+        cardano-ledger-shelley
+    default-language:   Haskell2010 
+
+executable governance-exe
+    main-is:            Governance.hs
+    hs-source-dirs:     tests
+    build-depends:
+        base >=4.14 && <5,
+        plutus-ledger-api,
+        plutus-tx,
+        plutus-tx-plugin,
+        bytestring,
+        serialise,
+        text,
+        containers,
+        cardano-api,
+        cardano-ledger-core,
+        cardano-ledger-shelley
+    default-language:   Haskell2010         
 
 executable mev-resistant-exe
     main-is:            MevResistant.hs
